@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/first_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="css/first_main.less.css" class="main-less">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+    <script src="lib/all.js"></script>
+    <script src="lib/activate.js"></script>
+  </head>
+
+  <body style="background: url('images/bg_metal.jpg')">
+
+    <script>
+       var id = localStorage.getItem('userID');
+        if( id != null || id != undefined ){
+            window.location = "panel.html";
+        }
+    </script>
+    <div class="upage" id="mainpage">
+      <div class="upage-outer">
+        <div class="uib-header header-bg container-group inner-element uib_w_5" data-uib="layout/header" data-ver="0">
+          <h2></h2>
+          <div class="widget-container wrapping-col single-centered">
+            <div class="widget uib_w_6 d-margins top_coloring" data-uib="media/text" data-ver="0">
+              <div class="widget-container left-receptacle"></div>
+              <div class="widget-container right-receptacle"></div>
+              <div>
+                <p>ACCOUNT ACTIVATION</p>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col left"></div>
+          <div class="widget-container content-area horiz-area wrapping-col right"></div>
+        </div>
+        <div class="widget uib_w_7 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/police.gif">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="upage-content content-area vertical-col left" id="page_27_54">
+          <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+              <div class="widget-container content-area vertical-col">
+
+                <div class="table-thing widget uib_w_1 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                  <label class="narrow-control" for="id"></label>
+                  <input class="wide-control form-control default input-lg" type="text" placeholder="Startup Code / ID" id="id">
+                </div>
+                <div class="table-thing widget uib_w_2 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                  <label class="narrow-control" for="officer_email"></label>
+                  <input class="wide-control form-control default input-lg" type="text" placeholder="Email" id="officer_email">
+                </div>
+                <div class="table-thing widget uib_w_8 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                  <label class="narrow-control" for="officer_password"></label>
+                  <input class="wide-control form-control default input-lg" type="password" placeholder="Password" id="officer_password">
+                </div>
+                <div class="table-thing widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                  <label class="narrow-control" for="officer_telephone"></label>
+                  <input class="wide-control form-control default input-lg" type="text" placeholder="Telephone" id="officer_telephone">
+                </div>
+                <button class="btn widget uib_w_4 d-margins top_coloring btn-lg btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1" id="app_add_officer"><i class="glyphicon glyphicon-ok-sign button-icon-left" data-position="left"></i>ACTIVATE</button><span class="uib_shim"></span>
+              </div>
+            </div>
+            <span class="uib_shim"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
